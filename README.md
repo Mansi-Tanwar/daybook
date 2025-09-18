@@ -15,7 +15,7 @@ DayBook is a secure and user-friendly personal journaling app built with the MER
    - [**Backend Setup**](#backend-setup)
    - [**Frontend Setup**](#frontend-setup)
 5. [**API Endpoints**](#5-api-endpoints)
-6. [**Contributing**](#6-contributing)
+6. [**Contributing**](#6-future-enhancements)
 
 ---
 
