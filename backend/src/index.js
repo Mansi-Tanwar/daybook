@@ -22,25 +22,20 @@ app.use("/api/entries", entryRoutes);
 
 let isConnected = false; 
 
-const connectDB = require("./config/database");
-
-const ensureDBConnection = async() => {
-  if(!isConnected){
+const connectDB =  async() => {
+  if(!isConnected) return;
     try {
-      await connectDB(); 
+      const db = await mongoose.connect(process.env.MONGO_URI);
+      
+      isConnected = db.connections[0].readyState === 1;
       console.log("Database connected successfully!")
-      isConnected = true;
 
     } catch (error) {
-      console.log("Database not connected!" + error);
+      console.log("Database connection failed!" + error);
     } 
-  }
 };
 
-app.use(async(req, res,next) => {
-  await ensureDBConnection(); 
-  next(); 
-});
+connectDB(); 
 
 // connectDB()
 //   .then(() => {
