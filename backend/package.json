@@ -4,26 +4,9 @@
   "description": "A MERN stack application to manage daily journals and tasks",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index",
-    "dev": "nodemon src/index"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mansi-tanwar/daybook.git"
-  },
-  "keywords": [
-    "mern",
-    "daybook",
-    "journal",
-    "task",
-    "management"
-  ],
-  "author": "Mansi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mansi-tanwar/daybook/issues"
-  },
-  "homepage": "https://github.com/mansi-tanwar/daybook#readme",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
