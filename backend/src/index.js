@@ -1,4 +1,5 @@
 const express = require("express");
+const serverless = require("serverless-http");
 const app = express();
 require("dotenv").config();
 const connectDB = require("./config/database");
@@ -20,10 +21,12 @@ app.use("/api/entries", entryRoutes);
 connectDB()
   .then(() => {
     console.log("Database connected successfully!");
-    app.listen(process.env.PORT, () => {
-      console.log(`Server is running on port ${process.env.PORT}!`);
-    });
+    // app.listen(process.env.PORT, () => {
+    //   console.log(`Server is running on port ${process.env.PORT}!`);
+    // });
   })
   .catch((error) => {
     console.log("Database not connected! " + error);
   });
+
+module.exports = serverless(app);
