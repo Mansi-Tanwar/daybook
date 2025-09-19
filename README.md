@@ -2,9 +2,7 @@
 
 DayBook is a secure and user-friendly personal journaling app built with the MERN stack (MongoDB, Express, React, and Node.js). It allows users to easily log in, write, view, and manage their daily entries while ensuring a seamless, distraction-free, and private experience. Prioritizing simplicity, security, and privacy, DayBook helps you document your thoughts and memories with confidence and peace of mind.
 
-[Live Demo](link-here)
-
-Head over to the [Vercel deployment branch](https://github.com/Mansi-Tanwar/daybook/tree/deployment) if you want to see how the deployment is set up (you can find the relevant details in their `package.json` file).
+[Live Demo](https://daybook-personal-diary.vercel.app/)
 
 ---
 
@@ -17,7 +15,7 @@ Head over to the [Vercel deployment branch](https://github.com/Mansi-Tanwar/dayb
    - [**Backend Setup**](#backend-setup)
    - [**Frontend Setup**](#frontend-setup)
 5. [**API Endpoints**](#5-api-endpoints)
-6. [**Contributing**](#6-contributing)
+6. [**Future Enhancements**](#6-future-enhancements)
 
 ---
 
@@ -231,4 +229,9 @@ The app should now be running locally. `By default`:
 | GET        | `/api/entries/search?text=` | Searches for entries that match the given search text in either the title or the description. The search query parameter text should contain the keyword(s) you want to search for.                      |
 
 
-**Future Enhancements**
+## 6. Future Enhancements
+
+- Calendar Integration – Users can view and track entries, important events, and daily activities in a visual, organized manner.
+- Multimedia and Analytics – Support photos, audio, videos, and generate insights like mood trends or activity summaries.
+- Cross-Platform Access – Access the diary on mobile devices, tablets, and across multiple devices with synchronization.
+
