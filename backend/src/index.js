@@ -8,7 +8,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: "https://daybook-frontend.vercel.app", credentials: true }));
+app.use(cors({ origin: "https://daybook-personal-diary.vercel.app/", credentials: true }));
 
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
